@@ -11,21 +11,21 @@ const ProductShowcase = () => {
       id: 1,
       title: "Traditional Herbal Liquor",
       description: "Our signature blend of traditional herbs and spices.",
-      image: "/lovable-uploads/0897167f-dc01-4d5e-9dd4-5c68222e7307.png",
+      image: "https://images.pexels.com/photos/5947019/pexels-photo-5947019.jpeg",
       price: "$55",
     },
     {
       id: 2,
       title: "Premium Reserve Blend",
       description: "Aged to perfection with rare mountain herbs.",
-      image: "https://images.unsplash.com/photo-1465379944081-7f47de8d74ac",
+      image: "https://images.pexels.com/photos/6542680/pexels-photo-6542680.jpeg",
       price: "$75",
     },
     {
       id: 3,
       title: "Highland Special Edition",
       description: "Limited release featuring exclusive highland ingredients.",
-      image: "https://images.unsplash.com/photo-1472396961693-142e6e269027",
+      image: "https://images.pexels.com/photos/5947028/pexels-photo-5947028.jpeg",
       price: "$95",
     },
   ];
@@ -115,7 +115,7 @@ const ProductShowcase = () => {
           </div>
           <div className="relative h-[400px]">
             <img
-              src="https://images.unsplash.com/photo-1517022812141-23620dba5c23"
+              src="https://images.pexels.com/photos/5947024/pexels-photo-5947024.jpeg"
               alt="Crafting Process"
               className="w-full h-full object-cover rounded-lg"
             />

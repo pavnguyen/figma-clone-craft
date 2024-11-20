@@ -35,7 +35,7 @@ const AboutProduct = () => {
           </p>
           <div className="aspect-video bg-gray-100 rounded-lg mb-8">
             <img 
-              src="https://images.unsplash.com/photo-1501854140801-50d01698950b" 
+              src="https://images.pexels.com/photos/5947024/pexels-photo-5947024.jpeg" 
               alt="Crafting Process"
               className="w-full h-full object-cover rounded-lg"
             />
@@ -102,7 +102,7 @@ const AboutProduct = () => {
           </p>
           <div className="aspect-video bg-gray-100 rounded-lg">
             <img 
-              src="https://images.unsplash.com/photo-1615729947596-a598e5de0ab3"
+              src="https://images.pexels.com/photos/6542680/pexels-photo-6542680.jpeg"
               alt="Sustainable Production"
               className="w-full h-full object-cover rounded-lg"
             />
