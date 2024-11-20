@@ -15,15 +15,17 @@ const ProductShowcase = () => {
       price: "$55",
     },
     {
+      id: 2,
       title: "Premium Reserve Blend",
       description: "Aged to perfection with rare mountain herbs.",
-      image: "https://images.unsplash.com/photo-1512676726755-dbe38421fbcc?q=80&w=800",
+      image: "https://images.unsplash.com/photo-1465379944081-7f47de8d74ac",
       price: "$75",
     },
     {
+      id: 3,
       title: "Highland Special Edition",
       description: "Limited release featuring exclusive highland ingredients.",
-      image: "https://images.unsplash.com/photo-1523246224990-496e9a19113a?q=80&w=800",
+      image: "https://images.unsplash.com/photo-1472396961693-142e6e269027",
       price: "$95",
     },
   ];
@@ -63,11 +65,11 @@ const ProductShowcase = () => {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
-            {products.map((product, index) => (
+            {products.map((product) => (
               <Card 
-                key={index} 
+                key={product.id} 
                 className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer"
-                onClick={() => handleProductClick(index + 1)}
+                onClick={() => handleProductClick(product.id)}
               >
                 <img
                   src={product.image}
@@ -113,7 +115,7 @@ const ProductShowcase = () => {
           </div>
           <div className="relative h-[400px]">
             <img
-              src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=800"
+              src="https://images.unsplash.com/photo-1517022812141-23620dba5c23"
               alt="Crafting Process"
               className="w-full h-full object-cover rounded-lg"
             />

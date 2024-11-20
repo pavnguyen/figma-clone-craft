@@ -27,9 +27,9 @@ const Product = () => {
       description: "Our signature blend of traditional herbs and spices, crafted using age-old recipes.",
       images: [
         "/lovable-uploads/0897167f-dc01-4d5e-9dd4-5c68222e7307.png",
-        "https://images.unsplash.com/photo-1512676726755-dbe38421fbcc?q=80&w=800",
-        "https://images.unsplash.com/photo-1523246224990-496e9a19113a?q=80&w=800",
-        "https://images.unsplash.com/photo-1578911373434-0cb395d2cbfb?q=80&w=800",
+        "https://images.unsplash.com/photo-1452378174528-3090a4bba7b2",
+        "https://images.unsplash.com/photo-1501286353178-1ec881214838",
+        "https://images.unsplash.com/photo-1452960962994-acf4fd70b632",
       ]
     },
     "2": {
@@ -37,10 +37,10 @@ const Product = () => {
       price: "$75",
       description: "Aged to perfection with rare mountain herbs, delivering an exceptional taste experience.",
       images: [
-        "https://images.unsplash.com/photo-1512676726755-dbe38421fbcc?q=80&w=800",
-        "/lovable-uploads/0897167f-dc01-4d5e-9dd4-5c68222e7307.png",
-        "https://images.unsplash.com/photo-1523246224990-496e9a19113a?q=80&w=800",
-        "https://images.unsplash.com/photo-1578911373434-0cb395d2cbfb?q=80&w=800",
+        "https://images.unsplash.com/photo-1465379944081-7f47de8d74ac",
+        "https://images.unsplash.com/photo-1472396961693-142e6e269027",
+        "https://images.unsplash.com/photo-1517022812141-23620dba5c23",
+        "https://images.unsplash.com/photo-1452960962994-acf4fd70b632",
       ]
     },
     "3": {
@@ -48,10 +48,10 @@ const Product = () => {
       price: "$95",
       description: "Limited release featuring exclusive highland ingredients, perfect for special occasions.",
       images: [
-        "https://images.unsplash.com/photo-1523246224990-496e9a19113a?q=80&w=800",
-        "/lovable-uploads/0897167f-dc01-4d5e-9dd4-5c68222e7307.png",
-        "https://images.unsplash.com/photo-1512676726755-dbe38421fbcc?q=80&w=800",
-        "https://images.unsplash.com/photo-1578911373434-0cb395d2cbfb?q=80&w=800",
+        "https://images.unsplash.com/photo-1472396961693-142e6e269027",
+        "https://images.unsplash.com/photo-1465379944081-7f47de8d74ac",
+        "https://images.unsplash.com/photo-1517022812141-23620dba5c23",
+        "https://images.unsplash.com/photo-1452960962994-acf4fd70b632",
       ]
     }
   };
