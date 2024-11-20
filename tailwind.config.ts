@@ -25,26 +25,26 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#2F5233", // Deep Forest Green
+          DEFAULT: "#2F5233",
           foreground: "#ffffff",
           hover: "#1F3722",
         },
         secondary: {
-          DEFAULT: "#A4BE7B", // Sage Green
+          DEFAULT: "#A4BE7B",
           foreground: "#ffffff",
           hover: "#94AE6B",
         },
         accent: {
-          DEFAULT: "#E5D9B6", // Wheat
+          DEFAULT: "#E5D9B6",
           foreground: "#2F5233",
         },
         muted: {
-          DEFAULT: "#285430", // Dark Green
+          DEFAULT: "#285430",
           foreground: "#ffffff",
         },
       },
       backgroundImage: {
-        'hero-pattern': "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07')",
+        'hero-pattern': "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/5947019/pexels-photo-5947019.jpeg')",
       },
     },
   },
