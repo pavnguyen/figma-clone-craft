@@ -34,7 +34,7 @@ const Index = () => {
             Experience centuries of tradition in every sip
           </p>
           <Link 
-            to="/product"
+            to="/products"
             className="bg-white text-black px-8 py-3 rounded-full flex items-center gap-2 mx-auto hover:bg-gray-100 transition-colors animate-fade-up w-fit"
             style={{ animationDelay: "0.4s" }}
           >
