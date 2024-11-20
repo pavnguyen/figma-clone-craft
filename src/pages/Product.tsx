@@ -4,14 +4,26 @@ import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
 import { toast } from "sonner";
 
+type ProductId = "1" | "2" | "3";
+
+interface Product {
+  title: string;
+  price: string;
+  description: string;
+  images: string[];
+}
+
+type Products = {
+  [K in ProductId]: Product;
+};
+
 const Product = () => {
-  const { id } = useParams();
+  const { id } = useParams<{ id: string }>();
   const [quantity, setQuantity] = useState(1);
   const [selectedImage, setSelectedImage] = useState(0);
 
-  // Product data (in a real app, this would come from an API)
-  const products = {
-    1: {
+  const products: Products = {
+    "1": {
       title: "Traditional Herbal Liquor",
       price: "$55",
       description: "Our signature blend of traditional herbs and spices, crafted using age-old recipes.",
@@ -22,7 +34,7 @@ const Product = () => {
         "https://images.unsplash.com/photo-1578911373434-0cb395d2cbfb?q=80&w=800",
       ]
     },
-    2: {
+    "2": {
       title: "Premium Reserve Blend",
       price: "$75",
       description: "Aged to perfection with rare mountain herbs, delivering an exceptional taste experience.",
@@ -33,7 +45,7 @@ const Product = () => {
         "https://images.unsplash.com/photo-1578911373434-0cb395d2cbfb?q=80&w=800",
       ]
     },
-    3: {
+    "3": {
       title: "Highland Special Edition",
       price: "$95",
       description: "Limited release featuring exclusive highland ingredients, perfect for special occasions.",
@@ -46,7 +58,7 @@ const Product = () => {
     }
   };
 
-  const product = products[id as keyof typeof products];
+  const product = id ? products[id as ProductId] : null;
 
   const handleQuantityChange = (value: number) => {
     if (quantity + value > 0) {
@@ -186,6 +198,3 @@ const Product = () => {
       </section>
     </div>
   );
-};
-
-export default Product;
