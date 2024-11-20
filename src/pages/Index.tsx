@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -32,10 +33,14 @@ const Index = () => {
           <p className="text-xl md:text-2xl mb-8 animate-fade-up" style={{ animationDelay: "0.2s" }}>
             Experience centuries of tradition in every sip
           </p>
-          <button className="bg-white text-black px-8 py-3 rounded-full flex items-center gap-2 mx-auto hover:bg-gray-100 transition-colors animate-fade-up" style={{ animationDelay: "0.4s" }}>
+          <Link 
+            to="/product"
+            className="bg-white text-black px-8 py-3 rounded-full flex items-center gap-2 mx-auto hover:bg-gray-100 transition-colors animate-fade-up w-fit"
+            style={{ animationDelay: "0.4s" }}
+          >
             Explore Now
             <ArrowRight className="w-5 h-5" />
-          </button>
+          </Link>
         </div>
       </section>
 
