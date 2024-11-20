@@ -1,25 +1,37 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { useNavigate } from "react-router-dom";
 
 const ProductShowcase = () => {
+  const navigate = useNavigate();
+  
   const products = [
     {
-      title: "Artisanal Craftsmanship and Natural Ingredients",
-      description: "Every bottle tells a story of tradition and quality.",
-      image: "https://images.unsplash.com/photo-1578911373434-0cb395d2cbfb?q=80&w=800",
+      id: 1,
+      title: "Traditional Herbal Liquor",
+      description: "Our signature blend of traditional herbs and spices.",
+      image: "/lovable-uploads/0897167f-dc01-4d5e-9dd4-5c68222e7307.png",
+      price: "$55",
     },
     {
-      title: "Health Benefits of Our Herbal Ingredients",
-      description: "Natural herbs with health benefits for your wellbeing.",
+      title: "Premium Reserve Blend",
+      description: "Aged to perfection with rare mountain herbs.",
       image: "https://images.unsplash.com/photo-1512676726755-dbe38421fbcc?q=80&w=800",
+      price: "$75",
     },
     {
-      title: "Experience the Spirit of the Central Highlands",
-      description: "A rich blend reflecting the beauty of Vietnam.",
+      title: "Highland Special Edition",
+      description: "Limited release featuring exclusive highland ingredients.",
       image: "https://images.unsplash.com/photo-1523246224990-496e9a19113a?q=80&w=800",
+      price: "$95",
     },
   ];
+
+  const handleProductClick = (productId: number) => {
+    console.log("Navigating to product details:", productId);
+    navigate(`/product/${productId}`);
+  };
 
   const seasonalVariants = {
     uniqueIngredients: {
@@ -52,7 +64,11 @@ const ProductShowcase = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
             {products.map((product, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
+              <Card 
+                key={index} 
+                className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer"
+                onClick={() => handleProductClick(index + 1)}
+              >
                 <img
                   src={product.image}
                   alt={product.title}
@@ -60,7 +76,8 @@ const ProductShowcase = () => {
                 />
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2">{product.title}</h3>
-                  <p className="text-gray-600">{product.description}</p>
+                  <p className="text-gray-600 mb-4">{product.description}</p>
+                  <p className="text-lg font-bold text-primary">{product.price}</p>
                 </CardContent>
               </Card>
             ))}
@@ -68,7 +85,6 @@ const ProductShowcase = () => {
         </div>
       </section>
 
-      {/* Crafting Section */}
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
