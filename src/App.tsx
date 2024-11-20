@@ -3,6 +3,7 @@ import Index from "./pages/Index";
 import Product from "./pages/Product";
 import ProductShowcase from "./pages/ProductShowcase";
 import AboutProduct from "./pages/AboutProduct";
+import Contact from "./pages/Contact";
 import { Toaster } from "@/components/ui/sonner";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route path="/products" element={<ProductShowcase />} />
         <Route path="/product/:id" element={<Product />} />
         <Route path="/about-product" element={<AboutProduct />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Toaster />
     </Router>
