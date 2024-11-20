@@ -25,32 +25,26 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "#2F5233", // Deep Forest Green
+          foreground: "#ffffff",
+          hover: "#1F3722",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: "#A4BE7B", // Sage Green
+          foreground: "#ffffff",
+          hover: "#94AE6B",
+        },
+        accent: {
+          DEFAULT: "#E5D9B6", // Wheat
+          foreground: "#2F5233",
+        },
+        muted: {
+          DEFAULT: "#285430", // Dark Green
+          foreground: "#ffffff",
         },
       },
-      keyframes: {
-        "fade-up": {
-          "0%": { opacity: "0", transform: "translateY(20px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
-        },
-        "fade-in": {
-          "0%": { opacity: "0" },
-          "100%": { opacity: "1" },
-        },
-        "scale-up": {
-          "0%": { transform: "scale(0.95)" },
-          "100%": { transform: "scale(1)" },
-        },
-      },
-      animation: {
-        "fade-up": "fade-up 0.5s ease-out forwards",
-        "fade-in": "fade-in 0.3s ease-out forwards",
-        "scale-up": "scale-up 0.3s ease-out forwards",
+      backgroundImage: {
+        'hero-pattern': "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07')",
       },
     },
   },

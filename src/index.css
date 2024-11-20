@@ -6,13 +6,9 @@
   :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 0%;
-    --primary: 0 0% 0%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 0%;
     --border: 0 0% 90%;
     --input: 0 0% 90%;
-    --ring: 0 0% 0%;
+    --ring: 47 100% 89%;
   }
 
   * {
@@ -30,15 +26,27 @@
   }
   
   .section-title {
-    @apply text-4xl md:text-5xl font-bold tracking-tight mb-8;
+    @apply text-4xl md:text-5xl font-bold tracking-tight mb-8 text-primary;
   }
   
   .timeline-year {
-    @apply text-2xl font-bold mb-2;
+    @apply text-2xl font-bold mb-2 text-primary;
   }
   
   .timeline-description {
     @apply text-lg text-gray-600 mb-8;
+  }
+
+  .hero-section {
+    @apply relative bg-hero-pattern bg-cover bg-center py-32 text-white;
+  }
+
+  .hero-section::before {
+    @apply content-[''] absolute inset-0 bg-black/50;
+  }
+
+  .hero-content {
+    @apply relative z-10 max-w-4xl mx-auto text-center px-4;
   }
 }
 
